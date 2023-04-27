@@ -6,9 +6,9 @@ const Header = () => {
     <div className='w-full'>
       
         <div className='block text-start '>
-          <h2 className='text-3xl  tracking-widest p-8 font-bold text-stone-800 border-b-2 border-stone-600'>
+          <h2 className='text-3xl tracking-widest p-8 font-bold text-stone-800 border-b-2 border-stone-600'>
             <Link to={"/"}>
-              FakeShop
+              WEB STORE
             </Link>
           </h2>
         </div>

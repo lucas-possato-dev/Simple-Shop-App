@@ -19,7 +19,7 @@ const ProductListing = () => {
 
   React.useEffect(() => {
     fetchProducts();
-  }, [fetchProducts]);
+  }, []);
 
   return (
     <>

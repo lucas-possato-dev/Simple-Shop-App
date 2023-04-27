@@ -7,16 +7,18 @@ const ProductComponent = () => {
   const renderList = products.map((product) => {
     const { id, title, image, price, category} = product;
     return (
-      <div className="col hover:scale-105 transition-all duration-300" key={id}>
+      <div className="col hover:scale-105 hover:opacity-80 transition-all duration-300" key={id}>
         <Link to={`/product/${id}`}>
-          <div className=' border-2 border-stone-500 p-4 rounded-xl'>
+          <div className=' border-2 border-stone-300 p-4 rounded-xl'>
             <div>
               <div className='w-full h-[300px] flex flex-col justify-center'>
                 <img className='w-[50%] h-[50%] mx-auto' src={image} alt={title} />
                 <div className='mt-8'>
                   <div className='font-bold'>{title}</div>
-                  <div>${price}</div>
+                  <div className='flex justify-between mt-4'>
+                  <div className='text-teal-900'>${price}</div>
                   <div className='text-sm text-stone-500 mt-2'>{category}</div>
+                  </div>
                 </div>
               </div>
             </div>
